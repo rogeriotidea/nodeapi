@@ -1,0 +1,38 @@
+### RFs (Requisitos Funcionais)
+
+- Deve ser possivel se cadastrar;
+- Deve ser possivel possivel se autenticar;
+- Deve ser possivel obter o perfil de um usuario logado;
+- Deve ser possivel obter o numero de check-ins realizados pelo usuario logado;
+- Deve ser possivel o usuario obter o seu historico de check-ins;
+- Deve ser possivel o usuario buscar academias proximas;
+- Deve ser possivel o usuario buscar academais pelo nome;
+- Deve ser possivel o usuario realizar o checkin em uma academia;
+- Deve ser possivel validar o checkin de um usuario;
+- Deve ser possivel cadastrar uma academia;
+
+### RNs (Regras de Negocio)
+
+- O usuario nao deve poder se cadastrar com um email duplicado.
+- O usuario nao pode fazer 2 checkins no mesmo dia.
+- O usuario nao pode fazer checkin se nao estiver perto (100m) da academia.
+- O Check-in so pode ser validado ate 20 minutos apos criado.
+- O check-in so pode ser validado por administradores;
+- A academia so pode ser cadastrada por administradores.
+
+### RNFs (Requisitos nao funcionais)
+
+- A senha do usuario precisa estar criptografada.
+- Os dados da aplicacao precisam estar persistidas em um banco de dados Postgres
+- Todas listas de dados precisar estar paginadas com 20 itens por pagina;
+- O usuario pode ser identificado com por um JWT
+
+
+
+PRISMA:
+
+npx prisma init
+npx prisma generate
+npx prisma migrate dev
+npx prisma studio
+
