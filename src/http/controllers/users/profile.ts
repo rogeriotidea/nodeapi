@@ -1,4 +1,3 @@
-import { makeGetUserMetricsUseCase } from '@/use-cases/factories/make-get-user-metrics-use-case'
 import { makeGetUserProfileUseCase } from '@/use-cases/factories/make-get-user-profile-use-case'
 import { FastifyRequest, FastifyReply } from 'fastify'
 
